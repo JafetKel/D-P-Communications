@@ -1,0 +1,1692 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    /* background-image: url("images/BG/BG.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    z-index: -1;
+}
+
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:-webkit-any(link){
+    cursor: pointer;
+}
+
+.second-nav-text-color {
+    color: #C6C6C6;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#logo {
+    position: relative;
+    z-index: 1;
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+}
+
+#logo-v2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 0px;
+}
+
+#logo-res{
+    position: relative;
+    /* visibility: hidden; */
+    margin: 0;
+    padding: 0;
+    width: 0px;
+}
+
+/*CUSTOM RESPONSIVE FOR NAVBARS*/
+
+@media only screen and (max-width:515px) {
+    #logo {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+    
+    #logo-v2{
+        width: inherit;
+    }
+    
+}
+
+@media only screen and (max-width:355px) {
+    #logo-v2 {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+    
+    #logo-res{
+        width: inherit;
+        height: 35px;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    
+    #logo{
+        padding-left: 60px;
+        padding-right: 170px;
+    }
+
+    #main-navbar a {
+        margin-right: 2px;
+    }
+
+    #second-navbar {
+        padding-left: 260px;
+    }
+
+    #second-navbar a {
+        margin-right: 1.1em;
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: white;
+    float: right;
+}
+
+/*ANIMATION SECTION!!!*/
+
+@media (min-width: 992px) {
+.animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+}
+
+@keyframes slideIn {
+0% {
+    transform: translateY(1rem);
+    opacity: 0;
+}
+100% {
+    transform:translateY(0rem);
+    opacity: 1;
+}
+0% {
+    transform: translateY(1rem);
+    opacity: 0;
+}
+}
+
+@-webkit-keyframes slideIn {
+0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+}
+100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+}
+0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+}
+}
+
+.slideIn {
+-webkit-animation-name: slideIn;
+animation-name: slideIn;
+}
+
+/*ANIMATION ENDS HERE!!!*/
+
+.drop-menu-bg {
+    background-color: #292828;;
+}
+
+.drop-menu-bg :hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.link-hover :hover {
+    color: #CD2129;
+}
+
+.whitey {
+    color: #C6C6C6;
+}
+
+.redness {
+    color: #CD2129;
+}
+
+.space-between {
+    padding-right: 5px;
+}
+
+/* BANNER SECTION*/
+
+.banner {
+    padding: 0;
+    margin: 0;
+    margin-top: 132px;
+    width: 100%;
+    height: 500px;
+    background-image: url(images/Banner/Banner-BG.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center bottom;
+    /* background-size: cover;
+    background-position: center;
+    position: relative; */
+    overflow: hidden;
+    margin-bottom: 75px;
+}
+
+#Banner-txt {
+    position: relative;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center; 
+    width: 100%; 
+    font-size: 16px;
+}
+
+#welcome {
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    align-content: flex-end;
+}
+
+#banner-row2 {
+    width: 68%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.no-padding-margin {
+    margin: 0;
+    padding: 0;
+}
+
+#connect-txt {
+    text-align: left;
+}
+
+#banner-txt2 {
+    padding-top: 25px;
+    height: auto;
+    width: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.banner-links{
+    margin: 0; 
+    list-style-type: none;
+    width: 100%;
+}
+
+.banner-links li {
+    display: inline-block;
+    width: 33%;
+}
+
+.banner-links li a {
+    margin: 0;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.banner-links li a:hover{
+    opacity: 75%;
+}
+
+.three-links {
+    background-color: #000000;
+    padding: 20px 0;
+    width: 100%;
+    height: 75px;
+    font-size: 20px;
+}
+
+#ban-links {
+    position: relative;
+    padding-top: 120px;
+}
+
+#connect-txt {
+    color: #F5F5F5; 
+    text-align: left;
+    font-size: 55px; 
+    line-height: 1;
+}
+
+#DP-describe {
+    color: #F5F5F5; 
+    text-align: left; 
+    font-weight: 200; 
+    font-size: 17px;
+}
+
+.img-res{
+    padding-right: 5px;
+}
+
+/* BANNER RESPONSIVE */
+@media only screen and (max-width:991.9px) {
+    .banner-container{
+        position: relative;
+        text-align: center;
+    }
+
+    .banner {
+        height: auto;
+        width: auto;
+    }
+
+    #banner-txt2 {
+        padding: 0;
+        /* margin-bottom: 300px; */
+    }
+
+    #banner-row2{
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #ban-links{ 
+        position: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        /* justify-content: space-between; */
+    }
+
+    .banner-links li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #banner-txt2{
+        padding-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    #banner-txt2 {
+        text-align: center;
+    }
+   
+    #con-txt{
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    img.img-res {
+        height: 25px;
+        width: 25px;
+    }
+
+    #banner-txt2{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    #con-txt{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (max-width:514.9px) {
+    .banner{
+        margin-top: 117px;
+    }
+
+}
+
+@media only screen and (max-width:431px) {
+    img.img-res {
+        height: 23px;
+        width: 23px;
+        padding: 0;
+    }
+    
+    #con-txt{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+}
+
+
+
+/* BANNER RESPONSIVE END */
+/* BANNER SECTION END */
+
+
+/* FIBER OPTICS SECTION */
+
+.fiber-optics {
+    padding: 0;
+    margin: 0;
+    background-image:  url("images/Fiber Optics/BG.png");
+    width: 100%;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size:contain; */
+    /* background-size: 100% 100%; */
+    background-position:center;
+    position: relative;
+    overflow: hidden;
+}
+
+#fiber-txt-container{
+    width: max-content;
+    padding-left: 150px;
+}
+
+#fiber-txt{
+    position: relative;
+    color: #CD2129;
+    font-family: 'Orbitron', sans-serif;
+    text-align: left; 
+    /* width: 100%; */
+    font-size: 13px;
+    /* margin-bottom: 55px; */
+    display: inline-block;
+    height: 1.5m;
+    overflow: hidden;
+    padding-left:  2px;
+}
+
+#fiber-title-txt {
+    position: relative;
+    color: #fff;
+    text-align: left;
+    font-size: 29px;
+    line-height: normal;
+}
+
+#fiber-desc {
+    position: relative;
+    color: #C6C6C6;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+#fiber-img {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    /* left: 0; */
+    /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+    width: 775px;
+    height: 500px;
+}
+
+/* FIBER OPTICS RESPONSIVE */
+@media only screen and (max-width:992px) {
+    .fiber-optics {
+        margin-bottom: -100px;
+    }
+
+    #fiber-txt-container{
+        padding-left: 50px;
+    }
+
+    #fiber-img {
+        width: 100%;
+        height: auto;
+        top: 100px;
+        left: 25px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    #fiber-txt-container{
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    #fiber-img {
+        padding: 0;
+        position: sticky;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    #fiber-title-txt {
+        font-size: 25px;
+    }
+
+    #fiber-desc {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width:447px) {
+    .fiber-optics {
+        margin-bottom: -200px;
+    }
+    
+    #main-fiber-br {
+        content: ' '
+    }
+    #main-fiber-br:after {
+        content: ' '
+    }
+
+    .fiber-br {
+        content: ' '
+    }
+    .fiber-br:after {
+        content: ' '
+    }
+    
+    #fiber-title-txt {
+        font-size: 22px;
+    }
+
+    #fiber-desc {
+        font-size: 9.5px;
+    }
+
+}
+
+/* FIBER OPTICS RESPONSIVE END */
+/* FIBER OPTICS SECTION END */
+
+
+/* HOMES SERVED SECTION */
+
+#homes-container{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: -110px;
+}
+
+.homes-served{
+    position: relative;
+    top: -110px;
+    width: 100%;
+    height: 700px;
+    background-image:  url("images/Homes Served/House Photo.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: 100% 100%;
+    background-position:center;
+    vertical-align: middle;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#homes-txt-container {
+    /* position: relative; */
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 60px;
+    margin-left: 120px;
+    width: 768px;
+    height: 380px;
+    /* height: 380px; */
+    background-color: #fff;
+    opacity: 80%;
+}
+
+#homes-main-title{
+    /* position: relative; */
+    color: #CD2129;
+    font-family: 'Orbitron', sans-serif;
+    /* text-align: left;  */
+    font-size: 14px;
+    /* margin-bottom: 55px; */
+    height: 1.5m;
+    overflow: hidden;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+#homes-title{
+    font-size: 30px;
+    margin-bottom: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+#homes-par {
+    font-size: 15.5px;
+    text-align: left;
+}
+
+/* HOMES SERVED RESPONSIVE */
+@media only screen and (max-width:1300px) {
+    #homes-container{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .homes-served{
+        width: 100%;
+        background-size: contain;
+    }
+
+    #homes-txt-container {
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width:1140px) {
+    .homes-served{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #homes-txt-container {
+        padding-left: 0;
+        width: 100%;
+        opacity: 100%;
+        margin-left: 0;
+    }
+
+    #homes-main-title{
+        text-align: center;
+    }
+
+    #homes-title{
+        text-align: center;
+    }
+
+    #homes-par{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:581px) {
+    #homes-container{
+        margin-bottom: -160px;
+    }
+
+}
+
+@media only screen and (max-width:421px) {
+    #homes-container{
+        margin-bottom: -225px;
+    }
+
+}
+
+@media only screen and (max-width:682px) {
+        .homes-br {
+            content: ' '
+        }
+        .homes-br:after {
+            content: ' '
+        }
+
+}
+
+@media only screen and (max-width:624px) {
+    #homes-title{
+        font-size: 25px;
+    }
+
+    #homes-par{
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width:489px) {
+    #homes-txt-container {
+        padding-top: 40px;
+    }
+
+    #homes-title{
+        font-size: 20px;
+    }
+
+    #homes-par{
+        font-size: 11px;
+    }
+
+}
+
+@media only screen and (max-width:403px) {
+    #homes-title{
+        font-size: 16px;
+    }
+
+    #homes-par{
+        font-size: 10px;
+    }
+}
+
+/* HOMES SERVED RESPONSIVE END */
+/* HOMES SERVED SECTION END */
+
+
+/* LOCAL BUSINESSES SERVED SECTION */
+
+#local-businesses-served{
+    position: relative;
+    top: -107px;
+    width: 100%;
+    height: 600px;
+    padding-top: 210px;
+    background-color: #F5F5F5;
+    vertical-align: middle;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#local-bus-main-title{
+    color: #CD2129;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    height: 1.5m;
+    overflow: hidden;
+    margin-bottom: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#local-bus-title{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+
+#local-bus-par{
+    font-size: 15.5px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+/* CAROUSEL SLIDER */
+
+.col-md-3 {
+    display: inline-block;
+    width: auto;
+}
+
+.promedic-logo{
+    height: 25px;
+}
+
+.carousel-item{
+    height: auto;
+}
+
+.slider {
+    margin-top: 74px;
+    width: 100%;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.promedic-row{
+    max-width: 899px;
+    margin: 0 auto;
+}
+
+.align-center-carousel {
+    text-align: center;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 15px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: none;
+}
+
+.carousel-control-next-icon {
+    background-image: url('images/Local Businesses Served/right-arrow.png');
+}
+
+.carousel-control-prev-icon {
+    background-image: url('images/Local Businesses Served/left-arrow.png');
+}
+
+/* LOCAL BUSINESSES SERVED RESPONSIVE */
+
+@media screen and (max-width: 1254px){
+    .promedic-row {
+        max-width: 700px;
+    }
+
+}
+
+@media screen and (max-width: 993px) {
+    .promedic-row {
+        max-width: 500px;
+    }
+
+    #local-businesses-served{
+        padding-top: 150px;
+    }
+
+}
+
+@media screen and (max-width: 802px) {
+    #local-businesses-served{
+        padding-top: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 991.9px) {
+    #loc-bus-br2 {
+        content: ' '
+    }
+    #loc-bus-br2:after {
+        content: ' '
+    }   
+
+}
+
+@media screen and (max-width: 768.9px) {
+    #loc-bus-br1 {
+        content: ' '
+    }
+    #loc-bus-br1:after {
+        content: ' '
+    }   
+
+}
+
+@media screen and (max-width: 550px) {
+    .col-md-3 {
+        display: list-item;
+        list-style: none;
+    }
+
+    #local-bus-title{
+        font-size: 25px;
+    }
+
+    #local-bus-par{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and(max-width: 383px){
+    .slider {
+        margin-top: auto;
+    }
+}
+
+/* LOCAL BUSINESSES SERVED RESPONSIVE END */
+
+/* LOCAL BUSINESSES SERVED SECTION END */
+
+
+/* COMMUNITY PARTNERS SECTION */
+
+#community-partners{
+    width: 100%;
+    position: relative;
+    margin-top: -107px;
+    background-color: #E8E8E8;
+    vertical-align: middle;
+    height: 550px;
+    padding-top: 115px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#com-part-main-title{
+    color: #CD2129;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    height: 1.5m;
+    overflow: hidden;
+    margin-bottom: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#com-part-title{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+
+#com-part-par{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+
+/* CAROUSEL-2 FOR COMMUNITY PARTNERS PART */
+
+.partners-row{
+    max-width: 899px;
+    margin: 0 auto;
+}
+
+.display {
+    display: inline-block;
+    width: auto;
+}
+
+.partner-logos{
+    height: 55px;
+    width: auto;
+}
+
+.carousel-item{
+    height: auto;
+}
+
+.slider-2 {
+    margin-top: 74px;
+    width: 100%;
+}
+
+
+/* COMMUNITY PARTNERS RESPONSIVE */
+
+@media screen and (max-width: 1254px){
+    .partners-row {
+        max-width: 700px;
+    }
+
+}
+
+@media screen and (max-width: 993px) {
+    .partners-row {
+        max-width: 500px;
+    }
+
+    #community-partners{
+        padding-top: 150px;
+    }
+
+}
+
+@media screen and (max-width: 991.9px) {
+    #com-part-br {
+        content: ' '
+    }
+    #com-part-br:after {
+        content: ' '
+    }   
+
+}
+
+
+@media screen and (max-width: 802px) {
+    #community-partners{
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 767.9px) {
+    .carousel-control-next, .carousel-control-prev{
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    #leenawee{
+        width: 200px;
+        height: auto;
+    }
+
+    .slider-2{
+        margin-top: 35px;
+    }
+
+    #com-part-par{
+        margin-bottom: 0;
+    }
+
+    #community-partners{
+        height: max-content;
+        padding-bottom: 30px;
+        padding-top: 75px;
+    }
+
+}
+
+/* COMMUNITY PARTNERS RESPONSIVE END */
+
+/* COMMUNITY PARTNERS SECTION END */
+
+
+/* MAIN FIBER OPTICS SECTION END */
+
+#main-fiber-optics{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    background-image: url("images/Main Fiber Optics/BG.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-size: 100% 100%; */
+    background-position:center bottom;
+    vertical-align: middle;
+    overflow: hidden;
+    z-index: 1000;
+    padding-top: 99px;
+}
+
+#M-fiber-main-title{
+    color: #CD2129;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    height: 1.5m;
+    overflow: hidden;
+    margin-bottom: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#M-fiber-title{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+#M-fiber-par{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 94px;
+    color: #ffffff;
+}
+
+.main-fiber-links{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 20px;
+    height: 55px;
+    width: 250px;
+    color: #CD2129;
+    background-color: #ffffff;
+    line-height: 2.75;
+    overflow: hidden;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.main-fiber-links:hover{
+    text-decoration: none;
+    color: #000000;
+    background-color: #c5c5c5;
+}
+
+.max-width-fb{
+    max-width: 1300px;
+}
+
+/* MAIN FIBER OPTICS RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    #main-fiber-optics{
+        background-size: cover;
+    }
+    
+    #align-center{
+        text-align: center;
+    }
+
+    #for-homes{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #for-businesses{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 681px) {
+    #M-fiber-br-p {
+        content: ' '
+    }
+    #M-fiber-br-p:after {
+        content: ' '
+    }   
+
+}
+
+@media screen and (max-width: 673px) {
+    #M-fiber-br-t {
+        content: ' '
+    }
+    #M-fiber-br-t:after {
+        content: ' '
+    }   
+
+}
+
+/* MAIN FIBER OPTICS RESPONSIVE END*/
+
+/* MAIN FIBER OPTICS SECTION END*/
+
+
+/* LOCALLY INVESTED SECTION */
+
+#locally-invested{
+    position: relative;
+    width: 100%;
+    /* height: 700px; */
+    padding-top: 75px;
+    background-color: #212121;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#local-inv-main-title{
+    color: #CD2129;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    height: 1.5m;
+    overflow: hidden;
+    margin-bottom: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#local-inv-title{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+#local-inv-par{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+.locally-links{
+    position: relative;
+    padding-top: 20px;
+}
+
+.locally-links:hover{
+    opacity: 50%;
+}
+
+.local-width{
+    max-width: 1350px;
+    
+}
+
+.locally-links-txt{
+    color: white;
+    font-size: 20px;
+    bottom: 12%;
+    left: 50%;
+    transform: translate(-50%, -12%);
+    position: absolute;
+}
+
+.locally-pad{
+    padding-right: 6px;
+}
+
+#locally-row{
+    width: max-content;
+    margin-left: -50px;
+}
+
+/* LOCALLY INVESTED RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    #locally-row{
+        width: auto;
+        margin-right: -50px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #local-inv-br-p {
+        content: ' '
+    }
+    #local-inv-br-p:after {
+        content: ' '
+    }   
+
+}
+
+/* LOCALLY INVESTED RESPONSIVE END*/
+/* LOCALLY INVESTED SECTION END*/
+
+
+/* SUCCESS STORIES SECTION*/
+
+#success-stories{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    /* padding-bottom: 100px; */
+    background-color: #E8E8E8;
+    vertical-align: middle;
+    overflow: hidden;
+    padding-top: 99px;
+}
+
+#story-main-title{
+    color: #CD2129;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#story-title{
+    font-size: 30px;
+    padding-bottom: 35px;
+    font-weight: 600;
+    color: #191919;
+    text-align: center;
+}
+
+#story-reading{
+    position: absolute; 
+    font-size: 20px;
+    height: 55px;
+    width: 250px;
+    color: #C51A20;
+    background-color: #ffffff;
+    line-height: 2.75;
+    overflow: hidden;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#story-reading:hover{
+    text-decoration: none;
+    color: #000000;
+    background-color: #c5c5c5;
+}
+
+
+#story-par{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 45px;
+    color: #737373;
+}
+
+.story-container{
+    columns: 3;
+    column-gap: 31px;
+    padding: 0;
+    margin-top: 100px;
+    position: relative;
+    height: auto;
+    margin-bottom: -625px;
+}
+
+.box{
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 0 34px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card-img-top{
+    width: 100%;
+    margin-top: -1px;
+    /* padding-right: -2px; */
+}
+
+.card-body{
+    padding-bottom: 50px;
+}
+
+.card-title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.card-subtitle {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 0px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #cd2129;
+}
+
+.card-text {
+    font-size: 19px;
+    max-width: 325px;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+#shadow-box {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0px;
+    height: 1164px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, 
+            rgba(254, 254, 254, 0.2) 0%, 
+            rgba(252, 252, 252, 0.7) 15%, 
+            rgba(250, 250, 250, 0.8) 28%, 
+            rgba(247, 247, 247, 1) 37%, 
+            rgba(245, 245, 245, 1) 80%);
+    /* margin-bottom: -500px; */
+    padding: 0;
+    pointer-events: none;
+    z-index: 1000;
+    
+}
+
+/* SUCCESS STORIES RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    .story-container{
+        columns: 2;
+        padding: 20px 20px 0;
+        margin-bottom: 0;
+    }
+
+    .card-text{
+        text-align: center;
+    }
+
+    #shadow-box{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .story-container{
+        columns: 1;
+    }
+}
+
+/* HOW WE MAY HELP YOU SUBSECTION */
+
+#how-to{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image:  url("images/How we may help You/BG.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    z-index: 1002;
+    padding-top: 100px;
+}
+
+#how-to-container {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 60px;
+    background-color: #fff;
+    opacity: 80%;
+}
+
+#how-to-title{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.how-to-links{
+    font-size: 16px;
+    text-decoration: none;
+    color: #831518;
+    margin-left: -15px;
+    line-height: 1;
+}
+
+.how-to-links:hover{
+    color: #C5C9CD;
+}
+
+#how-to-col2{
+    margin-left: -100px;
+}
+
+/* HOW WE MAY HELP YOU RESPONSIVE */
+
+@media screen and (max-width:1200px){
+    #how-to{
+        width: 100%;
+        background-size: contain;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -100px;
+    }
+
+    #how-to-col2{
+        margin-left: 0px;
+    }
+  
+}
+
+@media screen and (max-width:768px){
+    #how-to{
+        margin-bottom: -200px;
+    }
+
+    #how-to-container {
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 0;
+        width: 52%;
+        margin-left: 0;
+    }
+
+    #how-to-col2{
+        margin-left: 150px;
+        margin-top: -128px;
+    }
+
+    .how-to-links{
+        margin-left: 10px;
+    }
+
+    #how-to-title{
+        padding-left: 15px;
+    }
+
+}
+
+@media screen and (max-width:578px){
+    #how-to-container{
+        /* padding-bottom: 500px; */
+        /* background-position: 100px 10px; */
+        /* background-size: auto; */
+        width: 100%;
+        opacity: 100%;
+        padding-bottom: 200px;
+    }
+
+    #how-to-title{
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    #how-to-col1{
+        margin-left: auto;
+    }
+
+    .how-to-links{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #how-to-col2{
+        margin-left: auto;
+        margin-top: auto;
+        /* margin-left: 200px; */
+        padding-top: 25px;
+    }
+
+}
+
+/* HOW WE MAY HELP YOU RESPONSIVE END */
+
+/* HOW WE MAY HELP YOU SUBSECTION END*/
+
+/* SUCCESS STORIES END*/
+
+
+/* FOOTER SECTION */
+
+.footer{
+    position: relative;
+    width: 100%;
+    /* height: 1200px; */
+    /* top: -75px; */
+    margin-top: -75px;
+    padding-bottom: 75px;
+    /* background-color: #6e0101; */
+    vertical-align: middle;
+    overflow: hidden;
+    z-index: 1000;
+    background-image: url("images/Footer/BG.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+#footer-buttons {
+    position: relative;
+    /* bottom: 0; */
+    margin-top: 150px;
+}
+
+.footer-button-links{
+    margin: 0; 
+    list-style-type: none;
+    width: 100%;
+}
+
+.footer-button-links li {
+    display: inline-block;
+    width: 33%;
+}
+
+.footer-button-links li a {
+    margin: 0;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.footer-button-links li a:hover{
+    opacity: 75%;
+}
+
+#footer-row{
+    padding-top: 75px;
+}
+
+.footer-img{
+    padding-bottom: 10px;
+}
+
+#footer-logo{
+    padding-bottom: 25px;
+}
+
+#footer-chamber{
+    margin-left: 4px;
+}
+
+.footer-links{
+    margin-top: 25px;
+}
+
+.footer-links a{
+    text-decoration: none;
+}
+
+.footer-main-links{
+    color: #E3E3E3;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-main-links:hover{
+    color: #E3E3E3;
+}
+
+.footer-sub-links{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-sub-links li a{
+    color: #9C9C9C;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer-sub-links li a:hover{
+    color: #ffffff;
+}
+
+a.get-started{
+    padding-right: 50px;
+}
+
+a.service-area{
+    position: relative;
+    top: 15px;
+}
+
+.social-media{
+    display: inline-block;
+    padding: 8px 0;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.cpr-border{
+    margin-top: 50px;
+    border-top: 1px solid rgb(33, 33, 33);
+}
+
+.copyright{
+    padding-top: 65px;
+    padding-bottom: 45px;
+    color: #9C9C9C;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* FOOTER RESPONSIVE */
+
+@media screen and (max-width:992px){
+    .footer-button-links{ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-button-links li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #footer-row{
+        text-align: center;
+    }
+
+    a.get-started{
+        padding-right: 0px;
+        position: relative;
+        left: 47px;
+    }
+
+    a.service-area{
+        position: relative;
+        top: 25px;
+        left: -43px;
+    }
+
+}
+
+/* FOOTER RESPONSIVE END */
+
+/* FOOTER SECTION END */
+
+/* ENDGAME, THANK YOU FOR WATCHING! :) */
