@@ -6,15 +6,24 @@ This is a fully responsive landing page developed from scratch based on a provid
 
 Key Features
 
-Responsive Design: Adjusts to different screen sizes, providing an optimal viewing experience on desktops, tablets, and mobile devices.
-Clean and Modern UI: Based on a mockup, the design focuses on simplicity, usability, and visual appeal.
-Cross-Browser Compatibility: Tested across major web browsers (Chrome, Firefox, Edge, Safari) to ensure consistent performance.
-Optimized for Performance: Ensures fast load times and smooth interactions.
+• Responsive Design: Adjusts to different screen sizes, providing an optimal viewing experience on desktops, tablets, and mobile devices.
+
+• Clean and Modern UI: Based on a mockup, the design focuses on simplicity, usability, and visual appeal.
+
+• Cross-Browser Compatibility: Tested across major web browsers (Chrome, Firefox, Edge, Safari) to ensure consistent performance.
+
+• Optimized for Performance: Ensures fast load times and smooth interactions.
+
 Technologies Used
-HTML5: Markup language for structuring the content.
-CSS3: Used for styling and layout, including media queries for responsiveness.
-JavaScript: Implemented for basic interactivity.
-Bootstrap 4: Utilized for responsive design and component integration.
+
+• HTML5: Markup language for structuring the content.
+
+• CSS3: Used for styling and layout, including media queries for responsiveness.
+
+• JavaScript: Implemented for basic interactivity.
+
+• Bootstrap 4: Utilized for responsive design and component integration.
+
 
 Setup Instructions:
 
